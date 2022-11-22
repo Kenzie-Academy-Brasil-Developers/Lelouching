@@ -1,0 +1,89 @@
+.financee-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    height: fit-content;
+    min-height: 5.4375rem;
+    background-color: var(--color-grey-1);
+    border-radius: var(--radius-2);
+}
+
+.financee-list:hover{
+    background-color: #FFF;
+    box-shadow: 0px 4px 42px -12px rgba(0, 0, 0, 0.25);
+}
+
+.div-finance-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+.color-financee-entry{
+    background-color: var(--color-secondary);
+    width: .25rem;
+    height: 100%;
+}
+
+.color-financee-expense{
+    background-color: var(--color-grey-2);
+    width: .25rem;
+    height: 100%;
+}
+
+.div-financee-list-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 50%;
+    height: 100%;
+}
+
+.financee-description{
+    font-size: var(--font-size-5);
+    font-weight: var(--weight-1);
+    color: var(--color-grey-4);
+    word-break: break-all;
+}
+
+.financee-value-type{
+    font-size: var(--font-size-6);
+    font-weight: var(--weight-4);
+    color: var(--color-grey-3);
+}
+
+.div-financee-list-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: end;
+    align-items: center;
+    max-width: 100%;
+    height: 100%;
+}
+
+.financee-value-text{
+    font-size: var(--font-size-6);
+    font-weight: var(--weight-4);
+    color: var(--color-grey-4);
+}
+
+.button-image-trash{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.trash-image{
+    width: 1.7rem;
+    height: 1.7rem;
+}
+
+@media (min-width:811px) {
+    .financee-list{
+        width: 100%;
+    }
+}

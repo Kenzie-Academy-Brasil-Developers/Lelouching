@@ -1,0 +1,220 @@
+.form-text-style{
+    font-size: var(--font-size-6);
+    font-weight: var(--weight-4);
+    color: var(--color-grey-4);
+}
+
+.div-form-value-total{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.form-transaction{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-radius: var(--radius-2);
+    border: .0625rem solid var(--color-grey-2);
+    padding: 3rem 2rem;
+    width: 70%;
+}
+
+.div-description-1{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+#input-description{
+    color: var(--color-grey-3);
+    font-size: var(--font-size-5);
+    font-weight: var(--weight-4);
+    background-color: var(--color-grey-1);
+    border-radius: var(--radius-1);
+    border: .125rem solid transparent;
+    outline: none;
+    padding: 1rem;
+}
+
+#input-description::placeholder{
+    color: #868E96;
+    font-size: var(--font-size-5);
+    font-weight: var(--weight-4);
+}
+
+#input-description:focus{
+    background-color: var(--color-grey-1);
+    border: .125rem solid var(--color-grey-4);
+}
+
+.buy-example{
+    font-size: var(--font-size-6);
+    font-weight: var(--weight-4);
+    color: #868E96;
+}
+
+.div-description-2{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    max-width: 100%;
+}
+
+.div-value-value-type{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.div-value-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.div-value-2{
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 100%;
+}
+
+#input-value{
+    color: var(--color-grey-3);
+    font-size: var(--font-size-5);
+    font-weight: var(--weight-4);
+    background-color: var(--color-grey-1);
+    border-radius: var(--radius-1);
+    border: .125rem solid transparent;
+    outline: none;
+    padding: 1rem;
+    width: 6rem;
+    max-width: 100%;
+}
+
+#input-value::placeholder{
+    color: #868E96;
+    font-size: var(--font-size-5);
+    font-weight: var(--weight-4);
+}
+
+#input-value:focus{
+    border: .125rem solid var(--color-grey-4);
+}
+
+.real-money{
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    font-size: var(--font-size-5);
+    font-weight: var(--weight-4);
+    color: var(--color-grey-3);
+}
+
+.div-value-type-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+#input-value-type{
+    color: var(--color-grey-3);
+    font-size: var(--font-size-5);
+    font-weight: var(--weight-4);
+    background-color: var(--color-grey-1);
+    border-radius: var(--radius-1);
+    border: none;
+    outline: none;
+    padding: 1rem;
+}
+
+.button-insert-value{
+    color: var(--color-grey-1);
+    font-size: var(--font-size-5);
+    font-weight: var(--weight-3);
+    background-color: var(--color-brand-1);
+    border: none;
+    border-radius: var(--radius-1);
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.button-insert-value:hover{
+    background-color: var(--color-brand-2);
+}
+
+.div-value-total{
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--radius-2);
+    border: .0625rem solid var(--color-grey-2);
+    padding: 1.25rem;
+    width: 70%;
+    max-width: 100%;
+    gap: 1rem;
+}
+
+.div-sum-value{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.value-total-text{
+    font-size: var(--font-size-5);
+    font-weight: var(--weight-1);
+    color: var(--color-grey-4);
+}
+
+.sum-value{
+    font-size: var(--font-size-5);
+    font-weight: var(--weight-1);
+    color: var(--color-brand-1);
+}
+
+.value-referee{
+    font-size: var(--font-size-6);
+    font-weight: var(--weight-4);
+    color: var(--color-grey-3);
+}
+
+@media (min-width:811px) {
+    .div-form-value-total{
+        max-width: 100%;
+    }
+
+    .div-value-value-type{
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0.5rem;
+    }
+
+    .div-value-1{
+        flex-direction: column;
+        width: fit-content;
+        align-items: unset;
+    }
+
+    .div-value-type-1{
+        flex-direction: column;
+        width: fit-content;
+        align-items: unset;
+    }
+
+    #input-value{
+        min-width: 2rem;
+        width: 100%
+    }
+
+    #input-value-type{
+        min-width: 5rem;
+        width: 100%;
+    }
+}
