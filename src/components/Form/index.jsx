@@ -14,6 +14,8 @@ export const Form = ({ listTransactions, setListTransactions, totalValue }) => {
     const newTransaction = (event) => {
         event.preventDefault()
         setData(data)
+        data.type == "saída" ? 
+        setListTransactions([...listTransactions, {...data, id: uuid(), value: -data.value}]) : 
         setListTransactions([...listTransactions, {...data, id: uuid()}])
     }
 
